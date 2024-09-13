@@ -5,12 +5,13 @@
         Title="Integral" Height="375" Width="375"
         DataContext="Value">
 
-    <StackPanel  Background="Gray" Margin="0,0,0,-6">
+    <StackPanel  Background="Gray" Margin="0,0,0,-1">
        
         <ProgressBar x:Name="pBar" DockPanel.Dock="Bottom" Height="18" Margin="50" Background="LightGray" Value="0"/>
         <Grid Margin="50">
             <Button x:Name="dispatcher" Click="Dispatcher_Click" DockPanel.Dock="Left" HorizontalAlignment="Left" Content="Dispatcher" Background="Orange" Width="110" Height="40"/>
             <Button x:Name="worker" Click="worker_Click" DockPanel.Dock="Right" HorizontalAlignment="Right" Content="Worker" Background="Orange" Width="110"/>
         </Grid>
+        <TextBox x:Name="res" Text="calculate integral " Height="100" Foreground="Gray" FontSize="30" Background="Gray"/>
     </StackPanel>
 </Window>
